@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import TopPage from './pages/TopPage'
 import TodoPage from './pages/TodoPage'
 import AboutPage from './pages/AboutPage'
-import { CountPage } from './pages/CountPage';
+import CountPage from './pages/CountPage';
 import PushPage from './pages/PushPage'
+import DogPage from "./pages/DogPage";
 
 function App(props) {
   return(
@@ -16,6 +17,7 @@ function App(props) {
           <li><Link to="/about">about</Link></li>
           <li><Link to="/count">count</Link></li>
           <li><Link to="/push">push</Link></li>
+          <li><Link to="/dog">dog</Link></li>
         </ul>
         
         <hr/>
@@ -24,6 +26,7 @@ function App(props) {
         <Route path="/about" component={AboutPage}></Route>
         <Route path="/count" component={CountPage}></Route>
         <Route path="/push" component={PushPage}></Route>
+        <Route path="/dog" component={DogPage}></Route>
       </Router>
     </div>
   )
