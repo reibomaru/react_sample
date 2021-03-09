@@ -3,14 +3,14 @@ import { CountContext } from '../hooks/Count'
 
 function CountButton(){
     const {count, setCount} = React.useContext(CountContext);
-
     function countUp(){
-        let temp = count+1;
-        setCount(temp);
+        setCount(count+1);
     }
 
     return(
+        <>
         <input type="button" onClick={countUp} value="カウントアップ" />
+        </>
     )
 }
 

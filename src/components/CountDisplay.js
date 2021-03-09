@@ -1,10 +1,10 @@
 import React from 'react';
-import { CountContext } from '../hooks/Count'
+import { DoubledCountContext } from "../hooks/DoubledCount";
 
 function CountDisplay(){
-    const {count} = React.useContext(CountContext);
+    const {doubledCount} = React.useContext(DoubledCountContext);
     return(
-        <div>カウント: {count}</div>
+        <div>カウント: {doubledCount}</div>
     )
 }
 
